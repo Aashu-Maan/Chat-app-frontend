@@ -93,7 +93,7 @@ export default function Login() {
     socket.emit("user-online", data)
     //getId(id)
      // make sure this is exported correctly
-    navigate("/users");
+    navigate("/");
     
   }
 
