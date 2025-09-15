@@ -12,10 +12,11 @@ function App() {
   return (
     <>
       <Routes>
+        <Route path="/" element={<Users />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/chat/:id" element={<Userchats />} />
-        <Route path="/:id" element={<Users />} />
+        <Route path="/users" element={<Users />} />
       </Routes>
     </>
     )
