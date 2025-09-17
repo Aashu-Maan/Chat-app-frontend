@@ -139,6 +139,7 @@ const sendMessage = (message) => {
     text: newMessage
   })
   setMessage((prev) => [...prev], {text: newMessage, loggedInUser })
+  setNewMessage("")
 }
   return (
     <div id="chatContainer">
@@ -151,7 +152,7 @@ const sendMessage = (message) => {
       </nav>
       <section>
         <div id="chatSection">
-          <div className="myMessage">hello</div>
+
           
 {message?.map((msg, index) => {
   const isSender = msg.loggedInUser === loggedInUser; // check if current user sent it

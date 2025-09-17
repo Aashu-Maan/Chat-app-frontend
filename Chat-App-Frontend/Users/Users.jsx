@@ -190,7 +190,7 @@ export default function Users() {
     
     try {
       
-      const res = await fetch("https://chat-app-backend-2-ab1j.onrender.com/", {
+      const res = await fetch("https://chat-app-backend-2-ab1j.onrender.com/users", {
         credentials: "include"
       });
       if(!res.ok) {
