@@ -71,7 +71,8 @@ export default function Login() {
   const navigate = useNavigate();
 
   async function loggedIn() {
-    const res = await fetch("http://localhost:5491/login", {
+    const res = await fetch("https://chat-app-backend-2-ab1j.onrender.com/login",
+    {
       method: "POST",
       credentials: "include",
       headers: {

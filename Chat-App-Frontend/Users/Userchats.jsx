@@ -79,7 +79,7 @@ export default function Userchats() {
   
   async function getUser() {
     try {
-      const isUser = await fetch("http://localhost:5491/chat/" + id, {
+      const isUser = await fetch("https://chat-app-backend-2-ab1j.onrender.com/chat/" + id, {
         credentials: "include"
       })
       if (!isUser.ok) {
